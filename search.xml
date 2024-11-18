@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Mac安装HomeBrew-使用国内镜像</title>
+      <link href="/2024/11/18/Mac%E5%AE%89%E8%A3%85HomeBrew-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/"/>
+      <url>/2024/11/18/Mac%E5%AE%89%E8%A3%85HomeBrew-%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h1><blockquote><p>Mac电脑如何打开终端：command+空格 在聚焦搜索中输入terminal回车。</p></blockquote><h1 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h1><p>终端中粘贴下方命令回车：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;</span><br></pre></td></tr></table></figure><p>此处如果提示安装xcode，提示安装完成后，copy上面命令再次安装，选择 gitee镜像。</p><h1 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h1><p>安装成功后，再terminal窗口输入 brew 命令进行验证。</p><blockquote><p>记得保存使用推荐的alibaba镜像</p></blockquote><h1 id="卸载homeBrew"><a href="#卸载homeBrew" class="headerlink" title="卸载homeBrew"></a>卸载homeBrew</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)&quot;</span><br></pre></td></tr></table></figure><h1 id="Homebrew-官方地址"><a href="#Homebrew-官方地址" class="headerlink" title="Homebrew 官方地址"></a>Homebrew 官方地址</h1><p><a href="https://brew.sh/zh-cn/">https://brew.sh/zh-cn/</a><br>官方地址使用github的源，国内访问速度很慢，<em>很容易出错</em>，所以我们需要使用国内的源。</p><div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>以注解的方式实现Redis会话token同步</title>
       <link href="/2024/11/08/%E4%BB%A5%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Redis%E4%BC%9A%E8%AF%9Dtoken%E5%90%8C%E6%AD%A5/"/>
       <url>/2024/11/08/%E4%BB%A5%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Redis%E4%BC%9A%E8%AF%9Dtoken%E5%90%8C%E6%AD%A5/</url>
