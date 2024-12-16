@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>pixel手机连接wifi网络受限问题</title>
+      <link href="/2024/12/08/pixel%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5wifi%E7%BD%91%E7%BB%9C%E5%8F%97%E9%99%90%E9%97%AE%E9%A2%98/"/>
+      <url>/2024/12/08/pixel%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5wifi%E7%BD%91%E7%BB%9C%E5%8F%97%E9%99%90%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1、什么是adb"><a href="#1、什么是adb" class="headerlink" title="1、什么是adb"></a>1、什么是adb</h1><p>ADB 全称为 Android Debug Bridge，起到调试桥的作用，是一个客户端-服务器端程序。其中客户端是用来操作的电脑，服务端是 Android 设备。</p><p>ADB 也是 Android SDK 中的一个工具，可以直接操作管理 Android 模拟器或者真实的 Android 设备。</p><h1 id="2、为什么要用adb"><a href="#2、为什么要用adb" class="headerlink" title="2、为什么要用adb"></a>2、为什么要用adb</h1><p>运行设备的 shell(命令行)<br>管理模拟器或设备的端口映射<br>计算机和设备之间上传&#x2F;下载文件<br>可以对设备的应用进行卸载安装等<br>在 App 遇到 ANR&#x2F;Crash 等 bug 时，可以通过 ADB 来抓取日志</p><h2 id="简而言之，ADB-就是连接-Android-手机与-PC-端的桥梁，所以ADB又称为安卓调试桥（注意：是安卓，不是iOS），可以让用户在电脑上对手机进行全面的操作！"><a href="#简而言之，ADB-就是连接-Android-手机与-PC-端的桥梁，所以ADB又称为安卓调试桥（注意：是安卓，不是iOS），可以让用户在电脑上对手机进行全面的操作！" class="headerlink" title="简而言之，ADB 就是连接 Android 手机与 PC 端的桥梁，所以ADB又称为安卓调试桥（注意：是安卓，不是iOS），可以让用户在电脑上对手机进行全面的操作！"></a>简而言之，ADB 就是连接 Android 手机与 PC 端的桥梁，所以ADB又称为安卓调试桥（注意：是安卓，不是iOS），可以让用户在电脑上对手机进行全面的操作！</h2><hr><h1 id="Pixel-手机网络受限原因"><a href="#Pixel-手机网络受限原因" class="headerlink" title="Pixel 手机网络受限原因"></a>Pixel 手机网络受限原因</h1><blockquote><p>问题产生的原因：海外机器会使用wifi向服务器发送请求，用于校验wifi状态<br>解决办法：修改校验服务器地址</p></blockquote><h2 id="1-确认电脑上装了adb"><a href="#1-确认电脑上装了adb" class="headerlink" title="1. 确认电脑上装了adb"></a>1. 确认电脑上装了adb</h2><h2 id="2-挨个执行以下命令"><a href="#2-挨个执行以下命令" class="headerlink" title="2. 挨个执行以下命令"></a>2. 挨个执行以下命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">adb shell settings delete global captive_portal_mode</span><br><span class="line"></span><br><span class="line">adb shell settings put global captive_portal_mode 0</span><br><span class="line">adb shell settings get global captive_portal_mode</span><br><span class="line"></span><br><span class="line">adb shell settings delete global captive_portal_https_url</span><br><span class="line">adb shell settings delete global captive_portal_http_url</span><br><span class="line"></span><br><span class="line">adb shell settings put global captive_portal_http_url http://connect.rom.miui.com/generate_204</span><br><span class="line">adb shell settings put global captive_portal_https_url https://connect.rom.miui.com/generate_204</span><br></pre></td></tr></table></figure><h2 id="3-执行完，切为飞行模式，再切换回来就好了"><a href="#3-执行完，切为飞行模式，再切换回来就好了" class="headerlink" title="3. 执行完，切为飞行模式，再切换回来就好了"></a>3. 执行完，切为飞行模式，再切换回来就好了</h2><p>————————————————</p><p>参考连接：<a href="https://blog.csdn.net/qq_18525247/article/details/128086408">https://blog.csdn.net/qq_18525247/article/details/128086408</a></p><div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>v2ray自建节点教程</title>
       <link href="/2024/11/18/v2ray%E8%87%AA%E5%BB%BA%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B/"/>
       <url>/2024/11/18/v2ray%E8%87%AA%E5%BB%BA%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B/</url>
