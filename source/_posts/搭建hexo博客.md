@@ -232,6 +232,41 @@ hexo cl && hexo g && hexo d
 hexo cl; hexo g; hexo d
 ```
 
+## 4.常见问题
+ github访问超时问题。如图
+ ![giterror_2025-01-18_15-44-19.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAMsZ4tcE7zkY9GPqLKKIcqGht7n3LUAAgzCMRuMhVlUmdmgbxwDpRcBAAMCAAN5AAM2BA)
+```SHELL
+FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
+Error: Spawn failed
+    at ChildProcess.<anonymous> (C:\software\jhonsnowBlog\jhonsnow123.github.io\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21)
+    at ChildProcess.emit (node:events:519:28)
+    at cp.emit (C:\software\jhonsnowBlog\jhonsnow123.github.io\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+ ```
+```SHELL
+ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out
+```
+这个错误，这通常意味着有些东西阻止了你的连接。下面是一些建议的解决步骤：
+端口阻塞：某些网络或ISP可能会阻塞SSH的默认端口（22）。尝试使用443端口连接到GitHub：
+```SHELL
+ssh -T -p 443 git@ssh.github.com
+```
+如果这成功了，你可以考虑永久地更改你的SSH配置以使用443端口。打开或创建文件 ~/.ssh/config
+![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAMtZ4uUehxd0V-iKwaWAhtyjCQKJ2wAAm3CMRuMhVlUko1-oFLMXn8BAAMCAAN4AAM2BA)
+ 
+ 文件中添加以下内容
+ ```SHELL
+# Add section below to it
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+ ```
+再次测试连接
+```SHELL
+C:\software\jhonsnowBlog\jhonsnow123.github.io> ssh -T git@github.com
+Hi jhonsnow123! You've successfully authenticated, but GitHub does not provide shell access.
+```
 <div class="video-container">
 [up主专用，视频内嵌代码贴在这]
 </div>
