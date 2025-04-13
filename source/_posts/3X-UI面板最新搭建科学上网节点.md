@@ -107,6 +107,8 @@ sysctl net.ipv4.tcp_available_congestion_control
 
 - 后续点击二维码使用
 ![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAANJZ9Lq11XoUXP_G5hla8H7_Hj9KyEAAu7JMRv-g5lWooT5kCmTbAgBAAMCAAN4AAM2BA)
+
+参考链接: https://www.kejixiaolu.com/djvps/dj06.html
 <div class="video-container">
 [up主专用，视频内嵌代码贴在这]
 </div>
