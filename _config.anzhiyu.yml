@@ -140,7 +140,7 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://img.51santi.uk/file/ddf6d4681167b82a887ba.jpg
+  img: https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAOLaAuD1xYRR3RpSkuCWlZpoPSwkjYAAtfCMRvg-mBULUmt_7I66g8BAAMCAAN4AAM2BA
   effect: false
 
 # Disable all banner image
@@ -776,7 +776,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://img.51santi.uk/file/ddf6d4681167b82a887ba.jpg # 自定加载动画义头像
+  avatar: https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAOLaAuD1xYRR3RpSkuCWlZpoPSwkjYAAtfCMRvg-mBULUmt_7I66g8BAAMCAAN4AAM2BA # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -1222,6 +1222,8 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <script defer data-domain="blog.51santi.uk" src="https://plause.51santi.uk/js/script.js"></script>
+    - <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
   bottom:
     # 自定义js
