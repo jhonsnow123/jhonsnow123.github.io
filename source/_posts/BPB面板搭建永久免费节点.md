@@ -196,7 +196,7 @@ TR_PASS：填写一个复杂字符串，作为密码。
 3. 配置 BPB 面板参数
 下面是BPB面板的参数解析，给大家做参考，请自行测试其效果。
 🌐 VLESS - Trojan基础设置
-![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAOhaA5Uj2RytyVfTrstTVbW03JjAgsAAnLKMRsEl3BUvS1Yb72nbAQBAAMCAAN5AAM2BA)
+
 ![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAOjaA5VQ-vslERzPGCVwCC3xTa4v0wAAn7KMRsEl3BUch8RJL9_hu0BAAMCAAN5AAM2BA)
 ![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAOiaA5UxWYkSrhERL55pSEwwZH4osoAAnPKMRsEl3BUNvzOvp1pcigBAAMCAAN5AAM2BA)
 全部设置好，点击 APPLY SETTINGS 保存 BPB 面板配置

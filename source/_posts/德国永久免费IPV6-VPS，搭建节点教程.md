@@ -32,7 +32,11 @@ ai:
 Euserv提供永久免费的纯IPv6 VPS，只需一个邮箱即可申请。算是唯一一个没有任何门槛就能够使用的永久免费服务器了。缺点就是配置比较低，然后申请需要过审核。
 一个账号可以开三个免费VPS。每个月需要续期一次，可以配置自动续期。
 续期如图：
-![image.png](https://pic.51santi.uk/api/cfile/AgACAgUAAyEGAASQGKXDAAN-aAkrLyOX78fvONHSGuJVmjZcaD0AAg3CMRvAfEhUptAeygqJ8-ABAAMCAAN5AAM2BA)
+
+![image](https://pic.shenxing.win/i/55e1a840-2929-488d-b98e-edadd582895b.jpg)
+![image](https://pic.shenxing.win/i/0d160c98-00d3-4710-b602-35e81848e066.jpg)
+![image](https://pic.shenxing.win/i/5d7f0fb1-e5e8-4f00-94d2-38af12b4741c.jpg)
+
 
 # 准备工作
 1. 测试本地是否有IPV6 ： http://test-ipv6.com/  或者用这个网址：https://ip.zxinc.org/ipquery/
